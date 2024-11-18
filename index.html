@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <div id="interface">
+      <div class="ui-box">
+        <p>cells</p>
+        <input type="range" name="quantity" id="quantity" min="2" max="30" value="8" step="2">
+      </div>
+      <div class="ui-box">
+        <p>speed</p>
+        <input type="range" name="speed" id="speed" min="100" max="600" value="450" step="10">
+      </div>
+      <div class="ui-box">
+        <p>light</p>
+        <input type="range" name="contrast" id="contrast" min="20" max="255" value="20" step="1">
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+    <script src="class.js"></script>
+
+  </body>
+</html>

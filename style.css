@@ -1,0 +1,81 @@
+@font-face {
+  font-family: basis-grotesque;
+  src: url(font/basis-grotesque-regular-pro.ttf);
+}
+
+* {
+  font-family: basis-grotesque;
+}
+
+:root {
+  --currentColor: #141414;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  color: var(--currentColor);
+
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 92vh;
+
+}
+
+#interface {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+
+.ui-box {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range] {
+	appearance: none;
+	width: 200px;
+	height: 1.5px;
+	background-color: var(--currentColor); 
+}
+
+input[type='range']::-webkit-slider-thumb {
+	appearance: none;
+	background-color: var(--currentColor);
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+p {
+  font-size: 15px
+}
+
+
+
+
+canvas {
+  display: block;
+  
+}
